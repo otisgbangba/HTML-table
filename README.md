@@ -1,2 +1,75 @@
 # HTML-table
-html  &lt;table>   &lt;caption>A summary of the UK's most famous punk bands&lt;/caption>   &lt;thead>     &lt;tr>       &lt;th scope="col">Name of Class&lt;/th>       &lt;th scope="col">No. of Female Students&lt;/th>       &lt;th scope="col">No. of Male Students&lt;/th>       &lt;th scope="col">Total No. of Students&lt;/th>     &lt;/tr>   &lt;/thead>   &lt;tbody>     &lt;tr>       &lt;th scope="row">Senior Secondary School 1&lt;/th>       &lt;td>24&lt;/td>       &lt;td>30&lt;/td>       &lt;td>54&lt;/td>     &lt;/tr>     &lt;tr>       &lt;th scope="row">Senior Secondary School 2&lt;/th>       &lt;td>30&lt;/td>       &lt;td>22&lt;/td>       &lt;td>55&lt;/td>     &lt;/tr>     &lt;tr>       &lt;th scope="row">Senior Secondary School 3&lt;/th>       &lt;td>35&lt;/td>       &lt;td>19&lt;/td>       &lt;td>54&lt;/td>     &lt;/tr>   &lt;/tbody>   &lt;tfoot>     &lt;tr>       &lt;th scope="row" colspan="3">Total albums&lt;/th>       &lt;td colspan="3">163&lt;/td>     &lt;/tr>   &lt;/tfoot> &lt;/table> {  ....the styling code in CSS   font-family: sans-serif; }  table {   border-collapse: collapse;   border: 2px solid rgb(200,200,200);   letter-spacing: 1px;   font-size: 0.8rem; }  td, th {   border: 1px solid rgb(190,190,190);   padding: 10px 20px; }  th {   background-color: rgb(235,235,235); }  td {   text-align: center; }  tr:nth-child(even) td {   background-color: rgb(250,250,250); }  tr:nth-child(odd) td {   background-color: rgb(245,245,245); }  caption {   padding: 10px; }
+html 
+<table>
+  <caption>A summary of the UK's most famous punk bands</caption>
+  <thead>
+    <tr>
+      <th scope="col">Name of Class</th>
+      <th scope="col">No. of Female Students</th>
+      <th scope="col">No. of Male Students</th>
+      <th scope="col">Total No. of Students</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">Senior Secondary School 1</th>
+      <td>24</td>
+      <td>30</td>
+      <td>54</td>
+    </tr>
+    <tr>
+      <th scope="row">Senior Secondary School 2</th>
+      <td>30</td>
+      <td>22</td>
+      <td>55</td>
+    </tr>
+    <tr>
+      <th scope="row">Senior Secondary School 3</th>
+      <td>35</td>
+      <td>19</td>
+      <td>54</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <th scope="row" colspan="3">Total albums</th>
+      <td colspan="3">163</td>
+    </tr>
+  </tfoot>
+</table>
+{
+ ....the styling code in CSS
+  font-family: sans-serif;
+}
+
+table {
+  border-collapse: collapse;
+  border: 2px solid rgb(200,200,200);
+  letter-spacing: 1px;
+  font-size: 0.8rem;
+}
+
+td, th {
+  border: 1px solid rgb(190,190,190);
+  padding: 10px 20px;
+}
+
+th {
+  background-color: rgb(235,235,235);
+}
+
+td {
+  text-align: center;
+}
+
+tr:nth-child(even) td {
+  background-color: rgb(250,250,250);
+}
+
+tr:nth-child(odd) td {
+  background-color: rgb(245,245,245);
+}
+
+caption {
+  padding: 10px;
+}
